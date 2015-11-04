@@ -6,34 +6,9 @@ h1, h2, h3, h4, legend, labels{
     margin-top: 0;
 }
 
-/*form page all*/
-
-legend{
-    font-size: 1.6em;
+main h1:nth-child(1){
+    border-bottom: 1px solid black;
 }
-
-input:focus{
-    background: #889FC1;
-    transition: 2s;
-    width: 80%;
-    height: 30px;
-    box-sizing: border-box;
-    border-radius: 3em 3em;
-}
-
-input[type='date']{
-    background: white;
-}
-
-textarea:focus{
-    background: #889FC1;
-    transition: 5s;
-    width: 80%;
-    height: 60px;
-    box-sizing: border-box;
-}
-
-/*form page all end*/
 
 picture img{
     width: 100%;
@@ -50,21 +25,10 @@ p{
     margin-bottom: 0;
     margin-top: 0;
 }
-/*tranforms style*/
-
-nav ul li a{
-    transition: 1s;
-    text-shadow: 1px 2px black;
-}
-
-nav ul li a:hover{
-    transform: rotateZ(360deg);
-    transition: 3s;
-}
 
 /*mobile screen*/
 @media only screen
-    and (max-width: 40em){
+    and (max-width: 50em){
 
 /*header */
         header{
@@ -116,9 +80,6 @@ nav ul li a:hover{
             padding-bottom: 0.8em;
         }
 
-
-/*        hamburger menu*/
-
 /*top search bar*/
 
         form{
@@ -132,13 +93,24 @@ nav ul li a:hover{
         }
 
 /*main article*/
-        main{
-            margin: 1em 2em;
-        }
 
         main h1{
             border-bottom: 1px solid black;
             padding-bottom: 0.2em;
+            margin: 0.5em 0.7em;
+        }
+
+        main h2{
+            margin-left: 0.8em;
+        }
+
+        main h3{
+            margin: auto 1em;
+            margin-top: 1.5em;
+        }
+
+        main h4{
+            margin: 1em 0.8em;
         }
 
         main header{
@@ -146,8 +118,10 @@ nav ul li a:hover{
         }
 
         main p{
-            margin: 1em auto;
             line-height: 1.3em;
+            margin-left: 1em;
+            margin-right: 1em;
+            margin-bottom: 1em;
         }
 
         main header h2{
@@ -164,11 +138,8 @@ nav ul li a:hover{
 
         main footer p{
             margin: 0;
+            margin-left: 1em;
             font-size: 1em;
-        }
-
-        main h3{
-            margin-top: 1.5em;
         }
 
         main h3 + p{
@@ -185,95 +156,167 @@ nav ul li a:hover{
             padding: 1em 0.5em;
         }
 
+
+/*        aside mobile styling*/
+
+        aside section{
+            background: #F0F0F0;
+            margin: 1em 0;
+            padding: 1em 0;
+        }
+
+        aside section h2{
+            margin-left: 0.7em;
+        }
+
+        aside section article{
+            margin: 1em 1em;
+        }
+
+        aside section article p{
+            line-height: 1.3em;
+        }
+
+        aside section h2 a{
+            text-decoration: none;
+            color: black;
+        }
+
+        aside section article h3{
+            margin-bottom: 0.4em;
+        }
+
+        aside section article{
+            border-top: 1px solid black;
+        }
+
+/*        form page styling mobile*/
+
+        main form{
+            margin: 0;
+        }
+
+        main > form{
+            background: #F0F0F0;
+            margin: 0;
+            padding: 0;
+            padding-bottom: 1em;
+        }
+
+        main form fieldset{
+            border: none;
+        }
+
+        legend{
+            margin-left: 0.5em;
+            text-align: left;
+            padding-top: 1em;
+            font-weight: bold;
+            font-size: 1.5em;
+        }
+
+        main fieldset:nth-child(1) label{
+            text-align: left;
+            display: block;
+        }
+
+        main fieldset:nth-child(1) span{
+            display: block;
+            font-size: 1.2em;
+        }
+
+        main fieldset:nth-child(1) input{
+            width: 80%;
+            padding: 0.5em;
+            border-radius: 1em;
+            box-sizing: border-box;
+            font-size: 1.2em;
+            margin-bottom: 0.5em;
+        }
+
+        input[type='radio']{
+            margin-left: 3em;
+        }
+
+        #project span{
+            display: block;
+            text-align: left;
+            font-size: 1.2em;
+            margin-left: 3.2em;
+            margin-bottom: 0.5em;
+        }
+
+        #stage span{
+            display: block;
+            text-align: left;
+            font-size: 1.2em;
+            margin-left: 1em;
+        }
+
+        #project input[type='text'], textarea, input[type='date']{
+            width: 80%;
+            padding: 0.5em;
+            border-radius: 1em;
+            box-sizing: border-box;
+            font-size: 1.2em;
+            margin-bottom: 0.5em;
+        }
+
+        #stage input[type='text'], textarea{
+            width: 80%;
+            padding: 0.5em;
+            border-radius: 1em;
+            box-sizing: border-box;
+            font-size: 1.2em;
+            margin-bottom: 0.5em;
+        }
+
+        input[value='Aanmelden']{
+            border-radius: 4em 4em;
+            font-size: 1.5em;
+            color: white;
+            background: #3498db;
+            padding: 0.8em 1.4em;
+            width: 100%;
+        }
+
         picture{
             height: auto;
             width: 100%;
         }
 
+        img[alt='imageSizes']{
+            margin-bottom: 1em;
+        }
+
 /*        related section*/
         .related{
-            margin: 1em 2em;
+            margin: 1em 1em;
+        }
+
+        .related section ul li a{
+            color: black;
+            font-size: 0.9em;
+        }
+
+        .related section ul li{
+            font-size: 0.9em;
         }
 
         .related header{
             border-top: 2px solid black;
             background: #DADAD1;
-            padding: 0.5em 0;
+            padding: 0.5em 0.5em;
         }
 
         .related header + p{
             margin: 0.5em 0;
+            padding: 0.5em;
         }
 
 
-/*        form page*/
-        main form{
-            border: 1px solid black;
-            background: #F2F2F2;
-            border-radius: 2em 2em;
-            padding-bottom: 3em;
-            margin-top: 2em;
-        }
-
-        main form > fieldset{
-            border: none;
-        }
-
-        form fieldset label{
-            display: flex;
-            flex-direction: column;
-        }
-
-        main form > fieldset legend{
-            font-weight: bold;
-        }
-
-        main form input{
-            border-radius: 2em 2em;
-        }
-
-        form button{
-        border-radius: 2em 2em 2em 2em;
-    }
-
-        .related a{
-            color: black;
-            text-decoration: underline;
-        }
-
-            /*        submit button css*/
-        input[value="Aanmelden"]{
-            background: #E8820C;
-            font-size: 1.5em;
-            padding: 1em;
-    }
-
-
-/*        mededeling box*/
-        aside section:nth-child(1){
-            border: 1px solid black;
-            border-radius: 2em 2em;
-            margin: 0.5em 2em;
-        }
-
-        aside article{
-            margin: 1em 1.5em;
-            border-bottom: 1px solid black;
-        }
-
-        aside h2{
-            margin: 1em;
-        }
-
-/*        uitagenda box*/
-
-        aside section:nth-child(2){
-            border: 1px solid black;
-            border-radius: 2em 2em;
-            margin: 0.5em 2em;
-        }
 /*bottom footer*/
-        aside + footer{
+        .related + footer{
             background: #FFCC00;
             margin-top: 2em;
             padding-left: 3em;
@@ -281,19 +324,19 @@ nav ul li a:hover{
             display: block;
         }
 
-        aside + footer h2{
+        .related + footer h2{
             padding-top: 2em;
         }
 
-        aside + footer p:nth-last-child(1){
+        .related + footer p:nth-last-child(1){
             padding-bottom: 2em;
         }
 
-        aside + footer a{
+        .related + footer a{
             color: black;
         }
 
-        aside + footer form{
+        .related + footer form{
             text-align: left;
         }
 
@@ -302,11 +345,13 @@ nav ul li a:hover{
 
 /*tablet screen*/
 @media only screen
-    and (min-width: 40.064em)
-    and (max-width: 64em){
+    and (min-width: 50.064em)
+    and (max-width: 70em){
 
-        main, .related{
-            margin: 1em 2em;
+        main{
+            margin: 1em 1em;
+            width: 60%;
+            float: left;
         }
 
         header{
@@ -314,18 +359,19 @@ nav ul li a:hover{
             padding-bottom: 1em;
         }
 
-        h1:nth-child(1){
+        header h1:nth-child(1){
             color: white;
             float: left;
             padding-top: 1em;
             padding-left: 1.2em;
         }
 
-        p:nth-child(2){
+        header p:nth-child(2){
             clear: left;
             color: white;
             float: left;
             padding-left: 2em;
+            margin-bottom: 1em;
             width: 40%;
         }
 
@@ -336,6 +382,30 @@ nav ul li a:hover{
             position: relative;
             bottom: 2em;
         }
+
+        main h2:nth-child(1){
+            margin-top: 0.5em;
+        }
+
+        main h3{
+            margin-top: 1em;
+            margin-bottom: 0.5em;
+        }
+
+        main h4{
+            border-top: 1px solid black;
+        }
+
+        img[alt='imageSizes']{
+            margin-top: 1em;
+            margin-bottom: 1em;
+        }
+
+        video{
+            margin-top: 1em;
+            margin-bottom: 1em;
+        }
+
 
 
 /*        navigation bar*/
@@ -399,158 +469,238 @@ nav ul li a:hover{
             padding: 0;
         }
 
-        main{
-            margin 2em 2em;
-            width: 50%;
-            float: left;
+        main section p:nth-child(3){
+            background: #C7C3BD;
+            padding: 1em;
+            margin: 1em 0;
         }
 
-        main p{
-            line-height: 1.4em;
+        main section p:nth-child(5){
+            background: #C7C3BD;
+            padding: 1em;
+            margin: 1em 0;
         }
 
-        main ,h2, h3{
-            margin-top: 1.5em;
-        }
 
-        main h1:nth-child(1){
-            color: black;
-            float: none;
-            padding: 0;
+        /*        form page styling tablet*/
+
+        main form{
             margin: 0;
         }
 
-        main p:nth-child(2){
-            color: black;
-            float: none;
-            width: 100%;
+        main > form{
+            background: #F0F0F0;
+            margin: 0;
             padding: 0;
+            padding-bottom: 1em;
         }
 
-        /*        form page*/
-        main form{
-            border: 1px solid black;
-            background: #F2F2F2;
-            border-radius: 2em 2em;
-            padding-bottom: 3em;
-            margin-top: 2em;
-        }
-
-        main form > fieldset{
+        main form fieldset{
             border: none;
         }
 
-        form fieldset label{
-            display: flex;
-            flex-direction: column;
-        }
-
-        main form > fieldset legend{
+        legend{
+            margin-left: 0.5em;
+            text-align: left;
+            padding-top: 1em;
             font-weight: bold;
-        }
-
-        main form input{
-            border-radius: 2em 2em;
-        }
-
-        form button{
-        border-radius: 2em 2em 2em 2em;
-    }
-
-        .related a{
-            color: black;
-            text-decoration: underline;
-        }
-
-            /*        submit button css*/
-        input[value="Aanmelden"]{
-            background: #E8820C;
             font-size: 1.5em;
-            padding: 1em;
-            margin-left: 5em;
-    }
+        }
 
-/*        related aticle*/
-        .related p:nth-child(2){
-            padding: 0;
-            float: none;
-            color: black;
+        main fieldset:nth-child(1) label{
+            text-align: left;
+            display: block;
+        }
+
+        main fieldset:nth-child(1) span{
+            display: block;
+            font-size: 1.2em;
+        }
+
+        main fieldset:nth-child(1) input{
+            width: 80%;
+            padding: 0.5em;
+            border-radius: 1em;
+            box-sizing: border-box;
+            font-size: 1.2em;
+            margin-bottom: 0.5em;
+        }
+
+        input[type='radio']{
+            margin-left: 3em;
+        }
+
+        #project span{
+            display: block;
+            text-align: left;
+            font-size: 1.2em;
+            margin-left: 3.2em;
+            margin-bottom: 0.5em;
+        }
+
+        #stage span{
+            display: block;
+            text-align: left;
+            font-size: 1.2em;
+            margin-left: 1em;
+        }
+
+        #project input[type='text'], textarea, input[type='date']{
+            width: 80%;
+            padding: 0.5em;
+            border-radius: 1em;
+            box-sizing: border-box;
+            font-size: 1.2em;
+            margin-bottom: 0.5em;
+        }
+
+        #stage input[type='text'], textarea{
+            width: 80%;
+            padding: 0.5em;
+            border-radius: 1em;
+            box-sizing: border-box;
+            font-size: 1.2em;
+            margin-bottom: 0.5em;
+        }
+
+        input[value='Aanmelden']{
+            border-radius: 4em 4em;
+            font-size: 1.5em;
+            color: white;
+            background: #3498db;
+            padding: 0.8em 1.4em;
             width: 100%;
         }
 
-        .related {
-            clear:left;
-            width: 50%;
-            float: left;
-        }
 
-        .related header{
-            border-top: 2px solid black;
-            background: #DADAD1;
-        }
-
-/*        aside styling*/
-        aside p:nth-child(2){
-            padding: 0;
-            float: none;
-            color: black;
-            width: 100%;
-        }
+/*        aside styling tablet*/
 
         aside{
+            width: 35%;
+            float: right;
+        }
+
+        aside section{
+            background: #F0F0F0;
+            margin: 1em 0;
+            padding: 1em 0;
+        }
+
+        aside section h2{
+            margin-left: 0.7em;
+        }
+
+        aside section article{
+            margin: 1em 1em;
+        }
+
+        aside section article p{
+            line-height: 1.3em;
+        }
+
+        aside section h2 a{
+            text-decoration: none;
+            color: black;
+        }
+
+        aside section article h3{
+            margin-bottom: 0.4em;
+        }
+
+        aside section article{
+            border-top: 1px solid black;
+        }
+
+/*        related styling tablet*/
+
+        .related{
+            clear: both;
             display: flex;
-            align-content: flex-end;
-            width: 42%;
+            flex-direction: row;
             flex-wrap: wrap;
+            margin-left: 1em;
         }
 
-        /*        mededeling box*/
-        aside section:nth-child(1){
+        .related h2{
+            width: 100%;
+            border-top: 1px solid black;
+            padding-bottom: 1em;
+        }
+
+        .related article{
+            width: 45%;
             border: 1px solid black;
-            border-radius: 2em 2em;
-            margin: 0.5em 2em;
+            margin-bottom: 1em;
         }
 
-        aside article{
-            margin: 1em 1.5em;
-            border-bottom: 1px solid black;
+        .related header {
+            display: flex;
+            flex-direction: column;
+            align-content: flex-start;
+            background: #DADAD1;
+            padding: 1em;
         }
 
-        aside h2{
-            margin: 1em;
+        .related header + p{
+            padding: 1em;
         }
 
-/*        uitagenda box*/
-
-        aside section:nth-child(2){
-            border: 1px solid black;
-            border-radius: 2em 2em;
-            margin: 0.5em 2em;
+        .related article:nth-child(3){
+            margin-left: 1em;
         }
+
+        .related article:nth-child(5){
+            margin-left: 1em;
+        }
+
+        .related article header p:nth-child(2){
+            margin: 0;
+            color: black;
+            padding-left: 0;
+            width: 100%;
+            font-size: 1em;
+        }
+
+        .related article section{
+            padding: 1em;
+        }
+
+        .related section ul li a{
+            color: black;
+            font-size: 0.9em;
+        }
+
+        .related section ul li{
+            font-size: 0.9em;
+        }
+
+
+
 
 
 /*        bottom footer*/
 
-        aside + footer{
+        .related + footer{
             background: #FFCC00;
             clear: both;
         }
 
-        aside + footer p:nth-child(2){
+        .related + footer p:nth-child(2){
             padding: 0;
             float: none;
             color: black;
             width: 100%;
         }
 
-        aside + footer{
+        .related + footer{
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
         }
 
-        aside + footer section{
-            width: 33%;
+        .related + footer section{
+            width: 30%;
+            padding-left: 0.5em;
         }
 
         #feedback a{
@@ -566,11 +716,18 @@ nav ul li a:hover{
 
 /*desktop screen*/
 @media only screen
-    and (min-width: 64.063em)
-    and (max-width: 90em)
+    and (min-width: 70.063em)
+/*    and (max-width: 100em)*/
 {
-    main, .related{
-            margin: 1em 2em;
+    body{
+        width: 1200px;
+        margin: 0 auto;
+    }
+
+    main{
+            margin: 1em 1em;
+            width: 60%;
+            float: left;
         }
 
         header{
@@ -578,18 +735,19 @@ nav ul li a:hover{
             padding-bottom: 1em;
         }
 
-        h1:nth-child(1){
+        header h1:nth-child(1){
             color: white;
             float: left;
             padding-top: 1em;
             padding-left: 1.2em;
         }
 
-        p:nth-child(2){
+        header p:nth-child(2){
             clear: left;
             color: white;
             float: left;
             padding-left: 2em;
+            margin-bottom: 1em;
             width: 40%;
         }
 
@@ -600,6 +758,30 @@ nav ul li a:hover{
             position: relative;
             bottom: 2em;
         }
+
+        main h2:nth-child(1){
+            margin-top: 0.5em;
+        }
+
+        main h3{
+            margin-top: 1em;
+            margin-bottom: 0.5em;
+        }
+
+        main h4{
+            border-top: 1px solid black;
+        }
+
+        img[alt='imageSizes']{
+            margin-top: 1em;
+            margin-bottom: 1em;
+        }
+
+        video{
+            margin-top: 1em;
+            margin-bottom: 1em;
+        }
+
 
 
 /*        navigation bar*/
@@ -649,16 +831,6 @@ nav ul li a:hover{
             background: white;
         }
 
-        main article header p{
-            -webkit-column-count: 3; /* Chrome, Safari, Opera */
-            -moz-column-count: 3; /* Firefox */
-            column-count: 3;
-        }
-
-        main article section p{
-            margin-top: 0.5em;
-        }
-
         main h1:nth-child(1){
             color: black;
             float: none;
@@ -673,196 +845,266 @@ nav ul li a:hover{
             padding: 0;
         }
 
-        main{
-            margin 2em 2em;
-            width: 65%;
-            float: left;
-        }
-
-        main p{
-            line-height: 1.4em;
-        }
-
-        main ,h2, h3{
-            margin-top: 1.5em;
-        }
-
-        main section > p:nth-child(3){
+        main section p:nth-child(3){
             background: #C7C3BD;
-            padding: 1em 0.5em;
+            padding: 1em;
+            margin: 1em 0;
         }
 
-        main section > p:nth-child(5){
+        main section p:nth-child(5){
             background: #C7C3BD;
-            padding: 1em 0.5em;
+            padding: 1em;
+            margin: 1em 0;
         }
 
-/*        related aticle*/
-        .related p:nth-child(2){
-            padding: 0;
-            float: none;
-            color: black;
-            width: 100%;
-        }
 
-        .related {
-            clear:left;
-            width: 50%;
-            float: left;
-        }
-
-        .related header{
-            border-top: 2px solid black;
-            background: #DADAD1;
-        }
-
-    /*        form page*/
-        main h1 + p{
-            -webkit-column-count: 2; /* Chrome, Safari, Opera */
-            -moz-column-count: 2; /* Firefox */
-            column-count: 2;
-        }
+        /*        form page styling tablet*/
 
         main form{
-            border: 1px solid black;
-            background: #F2F2F2;
-            border-radius: 2em 2em;
-            padding-bottom: 3em;
-            margin-top: 2em;
+            margin: 0;
         }
 
-        main form > fieldset{
+        main > form{
+            background: #F0F0F0;
+            margin: 0;
+            padding: 0;
+            padding-bottom: 1em;
+        }
+
+        main form fieldset{
             border: none;
         }
 
-        form fieldset label{
-            display: flex;
-            flex-direction: column;
-        }
-
-        main form > fieldset legend{
+        legend{
+            margin-left: 0.5em;
+            text-align: left;
+            padding-top: 1em;
             font-weight: bold;
+            font-size: 1.5em;
         }
 
-        main form input{
-            border-radius: 2em 2em;
+        main fieldset:nth-child(1) label{
+            text-align: left;
+            display: block;
         }
 
-        form button{
-        border-radius: 2em 2em 2em 2em;
-    }
-
-        .related a{
-            color: black;
-            text-decoration: underline;
+        main fieldset:nth-child(1) span{
+            display: block;
+            font-size: 1.2em;
         }
 
+        main fieldset:nth-child(1) input{
+            width: 80%;
+            padding: 0.5em;
+            border-radius: 1em;
+            box-sizing: border-box;
+            font-size: 1.2em;
+            margin-bottom: 0.5em;
+        }
 
-    /*        submit button css*/
-        input[value="Aanmelden"]{
-            background: #E8820C;
+        input[type='radio']{
+            margin-left: 3em;
+        }
+
+        #project span{
+            display: block;
+            text-align: left;
+            font-size: 1.2em;
+            margin-left: 3.2em;
+            margin-bottom: 0.5em;
+        }
+
+        #stage span{
+            display: block;
+            text-align: left;
+            font-size: 1.2em;
+            margin-left: 1em;
+        }
+
+        #project input[type='text'], textarea, input[type='date']{
+            width: 80%;
+            padding: 0.5em;
+            border-radius: 1em;
+            box-sizing: border-box;
+            font-size: 1.2em;
+            margin-bottom: 0.5em;
+        }
+
+        #stage input[type='text'], textarea{
+            width: 80%;
+            padding: 0.5em;
+            border-radius: 1em;
+            box-sizing: border-box;
+            font-size: 1.2em;
+            margin-bottom: 0.5em;
+        }
+
+        input[value='Aanmelden']{
+            border-radius: 4em 4em;
             font-size: 1.5em;
             color: white;
-            border-radius: 80% 20% 80% 20%;
-            margin: 1em 30%;
-            width: 35%;
-            height: 200px;
-            transition: 2s ease;
-            text-shadow: 1px 2px black;
-    }
-
-        input[value="Aanmelden"]:hover{
-            background: #0D7BFF;
-            font-size: 2em;
-            color: white;
-            border-radius: 20% 80% 20% 80%;
-            margin: 1em 30%;
-            width: 35%;
-            height: 200px;
-            transition: 1.2s ease;
-    }
-
-
-/*        aside styling*/
-        aside p:nth-child(2){
-            padding: 0;
-            float: none;
-            color: black;
+            background: #3498db;
+            padding: 0.8em 1.4em;
             width: 100%;
         }
 
+
+/*        aside styling tablet*/
+
         aside{
+            width: 35%;
+            float: right;
+        }
+
+        aside section{
+            background: #F0F0F0;
+            margin: 1em 0;
+            padding: 1em 0;
+        }
+
+        aside section h2{
+            margin-left: 0.7em;
+        }
+
+        aside section article{
+            margin: 1em 1em;
+        }
+
+        aside section article p{
+            line-height: 1.3em;
+        }
+
+        aside section h2 a{
+            text-decoration: none;
+            color: black;
+        }
+
+        aside section article h3{
+            margin-bottom: 0.4em;
+        }
+
+        aside section article{
+            border-top: 1px solid black;
+        }
+
+/*        related styling tablet*/
+
+        .related{
+            clear: both;
             display: flex;
-            align-content: flex-end;
-            width: 25%;
+            flex-direction: row;
             flex-wrap: wrap;
+            margin-left: 1em;
         }
 
-        /*        mededeling box*/
-        aside section:nth-child(1){
+        .related h2{
+            width: 100%;
+            border-top: 1px solid black;
+            padding-bottom: 1em;
+        }
+
+        .related article{
+            width: 32%;
             border: 1px solid black;
-            border-radius: 2em 2em;
-            margin: 0.5em 2em;
+            margin-bottom: 1em;
         }
 
-        aside article{
-            margin: 1em 1.5em;
-            border-bottom: 1px solid black;
+        .related header {
+            display: flex;
+            flex-direction: column;
+            align-content: flex-start;
+            background: #DADAD1;
+            padding: 1em;
         }
 
-        aside h2{
-            margin: 1em;
+        .related header + p{
+            padding: 1em;
         }
 
-/*        uitagenda box*/
-
-        aside section:nth-child(2){
-            border: 1px solid black;
-            border-radius: 2em 2em;
-            margin: 0.5em 2em;
+        .related article:nth-child(3){
+            margin-left: 1em;
         }
+
+        .related article:nth-child(4){
+            margin-left: 1em;
+        }
+
+        .related article:nth-child(6){
+            margin-left: 1em;
+        }
+
+        .related article header p:nth-child(2){
+            margin: 0;
+            color: black;
+            padding-left: 0;
+            width: 100%;
+            font-size: 1em;
+        }
+
+        .related article section{
+            padding: 1em;
+        }
+
+        .related section ul li a{
+            color: black;
+            font-size: 0.9em;
+        }
+
+        .related section ul li{
+            font-size: 0.9em;
+        }
+
+
+
 
 
 /*        bottom footer*/
 
-        aside + footer{
+        .related + footer{
             background: #FFCC00;
             clear: both;
         }
 
-        aside + footer p:nth-child(2){
+        .related + footer p:nth-child(2){
             padding: 0;
             float: none;
             color: black;
             width: 100%;
         }
 
-        aside + footer{
+        .related + footer{
             display: flex;
             flex-direction: row;
+            flex-wrap: wrap;
             align-content: space-between;
         }
 
-        aside + footer section{
-            width: 16%;
+        .related + footer section{
+            width: 12%;
+            padding-left: 6em;
+            font-size: 0.8em;
         }
 
         #feedback a{
-            position: relative;
-            top: 3.2em;
             padding: 1em;
+            float: left;
             background: red;
             text-decoration: none;
             color: white;
         }
-
 }
 
 .hide{
-    display: none !important;
+    display: none;
 }
 
 .show{
-    display: block !important;
+    display: block;
 }
+
+label em{
+    color: red;
+    padding-bottom: 0.5em;
+}
+
 
